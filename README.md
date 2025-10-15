@@ -15,7 +15,7 @@ Wine Launch Manager, is a python3 based application for managing vanilla wine ap
 
 ---
 
-### **Install the required components or packages (Debian-Based, adjust for other distros):**
+### **Install the required components or packages (FreeBSD Based, adjust for other BSD Version):**
 
 ```bash
 $ sudo pkg update
