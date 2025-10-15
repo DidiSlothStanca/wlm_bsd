@@ -1,7 +1,7 @@
 # WLM - Wine Launch Manager BSD Version
 Wine Launch Manager, is a python3 based application for managing vanilla wine applications on BSD (FreeBSD).
 ## Screenshot
-![Screenshot WLM](./1.jpg)
+![Screenshot WLM](./1.png)
 ---
 
 ## How to Use WLM?
@@ -40,7 +40,7 @@ $ python3 --version
 ---
 
 ## WLM Menu
-![Screenshot WLM](./5.jpg)
+![Screenshot WLM](./2.png)
 ---
 
 ## Features:
@@ -48,42 +48,27 @@ $ python3 --version
 - Manage Vanilla Wine applications via a user-friendly GUI.
 - Integrate Winetricks for additional Wine configurations.
 - Uninstall applications installed within Wine.
-- Display FPS using GalliumHUD or MangoHUD.
+- Display FPS using GalliumHUD.
 - Create and manage shortcut lists in the Launcher.
 ---
+![Screenshot WLM](./1.png)
 ## How to Play?
-1. **Play Button**: Runs the application that has been added to the shortcut list.
-2. **Rename Button**: Renames the shortcut in the list.
-3. **Remove Button**: Deletes an application from the shortcut list.
-4. **Add Button**: Adds an application to the shortcut list menu (.exe file).
-5. **Change Icon Button**: Changes the launcher icon (\*.ico, \*.png).
-6. **Winecfg Button**: Opens the Wine Vanilla configuration.
-7. **Launch Mode Button**: For Counter FPS using GalliumHUD & Mangohud (GL or VK)
-
-## WLM Settings
-![Screenshot WLM](./7.jpg)
-### **Settings Menu:**
-
-- **Uninstaller**: Uninstalls programs installed within Wine.
-- **Explorer**: Opens the file manager or explorer inside Wine.
-
----
+1. **Runner**: Select Runner Option (Wine or Proton).
+2. **Counter FPS**: For Counter FPS using GalliumHUD.
+3. **Remove Button**: Deletes an application from the shortcut list, Mode for Enable Gallium Hud & Scale for ajust size HUD.
+4. **Add Exe**: Adds an application to the shortcut list menu (.exe file).
+5. **Setup**: Open Setup your windows apps (.*exe).
+6. **Remove**: Remove Shortcut (not Uninstall).
+7. **Launch**: Launch or Run Apps.
+8. **Add Exe**: Runs the application that has been added to the shortcut list.
+9. **Winetricks**: Open Winetricks to manage Wine or Proton.
+10. **Exit**: Exit WLM.
 
 ## How to Uninstall WLM?
 
 ### **Safer Method (File Manager):**
 
-Simply delete the `wlm` directory using your file manager:
-
-```
-~/wlm
-```
-
-### **Terminal Method:**
-
-```bash
-rm -rf ~/wlm
-```
+Simply delete the `wlm` directory using your file manager
 
 ---
 
