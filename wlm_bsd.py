@@ -21,13 +21,11 @@ class WineLauncherManager:
             bg="#d9d9d9"
         ).pack(pady=10)
 
-        # Daftar aplikasi
         self.app_list = tk.Listbox(root, width=70, height=10, exportselection=False)
         self.app_list.pack(pady=5)
         self.load_shortcuts()
         self.app_list.bind("<<ListboxSelect>>", self.on_select)
 
-        # Pilihan runner
         frame_radio = tk.Frame(root, bg="#d9d9d9")
         frame_radio.pack(pady=5)
         tk.Label(frame_radio, text="Runner:", bg="#d9d9d9").pack(side=tk.LEFT, padx=5)
@@ -35,7 +33,6 @@ class WineLauncherManager:
         tk.Radiobutton(frame_radio, text="Wine", variable=self.engine_choice, value="wine", bg="#d9d9d9").pack(side=tk.LEFT)
         tk.Radiobutton(frame_radio, text="Proton", variable=self.engine_choice, value="proton", bg="#d9d9d9").pack(side=tk.LEFT)
 
-        # Frame HUD (seperti di gambar)
         frame_hud_border = ttk.LabelFrame(root, text="Counter FPS (Gallium HUD)")
         frame_hud_border.pack(fill="x", padx=10, pady=5)
 
@@ -52,15 +49,13 @@ class WineLauncherManager:
         self.scale_entry.insert(0, "1")
         self.scale_entry.pack(side=tk.LEFT)
 
-        # Tombol baris 1
         frame_btn_top = tk.Frame(root, bg="#d9d9d9")
         frame_btn_top.pack(pady=5)
         tk.Button(frame_btn_top, text="Add EXE", command=self.add_app, width=12).pack(side=tk.LEFT, padx=5)
         tk.Button(frame_btn_top, text="Setup", command=self.setup_app, width=12).pack(side=tk.LEFT, padx=5)
         tk.Button(frame_btn_top, text="Remove", command=self.remove_app, width=12).pack(side=tk.LEFT, padx=5)
         tk.Button(frame_btn_top, text="Launch", command=self.launch_app, width=12).pack(side=tk.LEFT, padx=5)
-
-        # Tombol baris 2
+        
         frame_btn_bottom = tk.Frame(root, bg="#d9d9d9")
         frame_btn_bottom.pack(pady=5)
         tk.Button(frame_btn_bottom, text="Winetricks", command=self.run_winetricks, width=12).pack(side=tk.LEFT, padx=5)
