@@ -1,7 +1,7 @@
 # WLM - Wine Launch Manager BSD Version
 Wine Launch Manager, is a python3 based application for managing vanilla wine applications on BSD (FreeBSD).
 ## Screenshot
-![Screenshot WLM](./1.png)
+![Screenshot WLM](Screenshoot/3.png)
 ---
 
 ## How to Use WLM?
@@ -19,11 +19,15 @@ Wine Launch Manager, is a python3 based application for managing vanilla wine ap
 
 ```bash
 $ sudo pkg update
-$ sudo pkg install py3x-tkinter
+$ pkg install python3 py3x-tkinter py3x-pillow wine wine-proton winetricks xdg-utils mesa-dri
 ```
 ## Note: py3x is version python, chek using command
 ```bash
 $ python3 --version
+```
+## example:
+```
+$ pkg install python3 py311-tkinter py311-pillow wine wine-proton winetricks xdg-utils mesa-dri
 ```
 ---
 
@@ -40,7 +44,7 @@ $ python3 --version
 ---
 
 ## WLM Menu
-![Screenshot WLM](./2.png)
+![Screenshot WLM](Screenshoot/4.png)
 ---
 
 ## Features:
@@ -51,7 +55,7 @@ $ python3 --version
 - Display FPS using GalliumHUD.
 - Create and manage shortcut lists in the Launcher.
 ---
-![Screenshot WLM](./1.png)
+![Screenshot WLM](Screenshoot/2.png)
 ## How to Play?
 1. **Runner**: Select Runner Option (Wine or Proton).
 2. **Counter FPS**: For Counter FPS using GalliumHUD.
